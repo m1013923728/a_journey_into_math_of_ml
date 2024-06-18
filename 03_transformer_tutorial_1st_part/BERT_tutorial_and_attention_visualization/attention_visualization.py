@@ -124,9 +124,7 @@ class Pretrainer:
 
 
 if __name__ == '__main__':
-    model = Pretrainer(max_seq_len=256,
-                       batch_size=1,
-                       )
+    model = Pretrainer(max_seq_len=256,batch_size=1,)
     text = "为什么要上班"
     # text = "历史上的今天发生了什么事？"
     attention_matrices = model(text)
